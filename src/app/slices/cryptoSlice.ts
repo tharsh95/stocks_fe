@@ -1,8 +1,10 @@
+"use client"
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   data: [],
-  symbol: 'BTC',
+  symbol: 'BNB',
+  count:20
 };
 
 const cryptoSlice = createSlice({
@@ -15,8 +17,11 @@ const cryptoSlice = createSlice({
     setSymbol: (state, action) => {
       state.symbol = action.payload;
     },
+    setCount: (state, action) => {
+      state.count = action.payload;
+    },
   },
 });
 
-export const { setData, setSymbol } = cryptoSlice.actions;
+export const { setData, setSymbol,setCount } = cryptoSlice.actions;
 export default cryptoSlice.reducer;
