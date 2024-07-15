@@ -3,7 +3,8 @@ import { setCount, setData, setSymbol } from '../redux/slices/cryptoSlice';
 import { store } from '../redux/store';
 import { NewDataPayload } from '../types';
 
-const socket: Socket = io('http://localhost:8080');
+
+const socket: Socket = io(`${process.env.NEXT_PUBLIC_API_URL}`);
 
 socket.on('new-data', ({ data, symbol, count }: NewDataPayload) => {
   store.dispatch(setData(data));
