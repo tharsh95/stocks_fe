@@ -1,13 +1,13 @@
 import { ColumnDef } from "@tanstack/react-table"
-export type Payment = {
-    id: string
-    amount: number
-    status: "pending" | "processing" | "success" | "failed"
-    email: string
+export type Coin = {
+
+    name: string
+    rate: number
+    createdAt: string
   }
 
 
-export const columns: ColumnDef<Payment>[] = [
+export const columns: ColumnDef<Coin>[] = [
     {
       accessorKey: "name",
       header: "Name",
@@ -15,6 +15,12 @@ export const columns: ColumnDef<Payment>[] = [
     {
       accessorKey: "rate",
       header: "Price",
+      cell: ({ row }) => {
+        // let preciseNumber = row.getValue("createdAt").toFixed(4);
+        const fixed = row.getValue("rate").toFixed(4)
+   
+        return <div>{fixed}</div>
+      },
     },
     {
       accessorKey: "createdAt",
