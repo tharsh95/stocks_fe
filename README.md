@@ -27,3 +27,17 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+When you open the app in your browser,
+make sure to click "Start Polling" to begin fetching data in the backend. 
+To view the rates of different
+cryptocurrencies, you can use the dropdown menu
+to select another cryptocurrency. Additionally,
+you can change the cryptocurrency by clicking the
+"Change Crypto" button and selecting from the dropdown in the modal.
+
+
+
+
+
+
+

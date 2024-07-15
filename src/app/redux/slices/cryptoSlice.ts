@@ -45,7 +45,7 @@ interface CryptoState {
 // Define initial state
 const initialState: CryptoState = {
   data: [],
-  symbol: '',
+  symbol: 'BTC',
   count: 0,
   isPolling: false,
 };
