@@ -17,7 +17,7 @@ export const columns: ColumnDef<Coin>[] = [
       header: "Price",
       cell: ({ row }) => {
         // let preciseNumber = row.getValue("createdAt").toFixed(4);
-        const fixed = row.getValue("rate").toFixed(4)
+        const fixed = (row.getValue("rate") as number).toFixed(4)
    
         return <div>{fixed}</div>
       },
