@@ -24,7 +24,10 @@ Copy the key-value from .env.example
 # Using npm
 npm run dev
 ```
-
+BE-REPO
+```bash
+https://github.com/tharsh95/stocks_fe
+```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 When you open the app in your browser,
